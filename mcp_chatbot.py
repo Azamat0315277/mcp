@@ -101,10 +101,10 @@ class MCP_ChatBot:
                 tools = response.tools
                 print("\nConnected to server with tools:", [tool.name for tool in tools])
 
-                # Fix: Add 'type' field to each tool (required by OpenAI API)
+
                 self.available_tools = [{
-                    "type": "function",  # This is the missing field that caused the error
-                    "function": {  # Wrap schema properties in a 'function' object
+                    "type": "function",
+                    "function": {
                         "name": tool.name,
                         "description": tool.description,
                         "parameters": tool.inputSchema

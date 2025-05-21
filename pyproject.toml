@@ -8,6 +8,7 @@ dependencies = [
     "arxiv>=2.2.0",
     "matplotlib>=3.10.3",
     "mcp>=1.9.0",
+    "mcp-server-fetch>=2025.4.7",
     "notebook>=7.4.2",
     "numpy>=2.2.6",
     "openai>=1.79.0",
